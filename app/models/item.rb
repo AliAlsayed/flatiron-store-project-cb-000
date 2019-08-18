@@ -4,10 +4,6 @@ class Item < ActiveRecord::Base
   belongs_to :category
 
   def self.available_items
-    Item.all.map do |item|
-      if item.inventory > 0
-        item
-      end
-    end
+    Item.where('inventory > ?', 0)
   end
 end
