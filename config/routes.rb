@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   resources :categories
   devise_for :users
   resources :line_items, only: [:create]
-  get '/users/sign_out', to: 'store#index'
+  #get '/users/sign_out', to: 'store#index'
 end
