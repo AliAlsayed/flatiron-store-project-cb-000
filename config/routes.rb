@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   post '/checkout', to: 'carts#checkout'
-  root 'store#index'
+  root '/store', to:'store#index'
   resources :carts
   resources :items
   resources :categories
