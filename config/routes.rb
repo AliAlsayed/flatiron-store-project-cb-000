@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'store#index'
   post '/checkout', to: 'carts#checkout'
   get '/store', to: 'store#index'
   resources :carts
