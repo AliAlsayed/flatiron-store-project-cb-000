@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def redirecrt_to_store
-    redirecrt_to store_path
+    redirect_to store_path
   end
 end
